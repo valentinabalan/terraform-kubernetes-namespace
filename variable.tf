@@ -1,5 +1,5 @@
-variable name {
-  type =string
-  default = "test"
+variable "name" {
+  type        = string
+  default     = "test"
   description = "The name of the namespace"
 }
