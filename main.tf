@@ -6,8 +6,7 @@ resource "kubernetes_namespace" "this1" {
 
 resource "kubernetes_resource_quota" "pod" {
   metadata {
-    name = "pod-quota"
-    namespace = kubernetes_namespace.this1.metadata.0.name
+    name      = "pod-quota"
   }
   spec {
     hard = {
