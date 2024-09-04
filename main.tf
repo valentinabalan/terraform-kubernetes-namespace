@@ -1,5 +1,6 @@
-resource "kubernetes_namespace" "example" {
+resource "kubernetes_namespace" "this1" {
   metadata {
-    name = "my-first-namespace"
+    name = var.name
   }
 }
+
